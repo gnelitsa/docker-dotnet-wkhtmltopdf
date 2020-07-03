@@ -5,7 +5,7 @@ RUN apt-get update \
         curl \
         software-properties-common\
         libxrender1 libfontconfig1 libx11-dev libjpeg62 libxtst6 libjpeg-turbo8\
-                           fontconfig xfonts-75dpi xfonts-base && \
+                           fontconfig xfonts-75dpi xfonts-base libc6-dev libgdiplus && \
     curl -SL --output wkhtmltox_0.12.5-1.bionic_amd64.deb "https://downloads.wkhtmltopdf.org/0.12/0.12.5/wkhtmltox_0.12.5-1.bionic_amd64.deb" && \
     dpkg -i wkhtmltox_0.12.5-1.bionic_amd64.deb && \
     apt-get -f install &&\
